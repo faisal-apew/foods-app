@@ -1,4 +1,4 @@
-package com.bsoandroid.foodapp;
+package com.example.foodsapp;
 
 import android.graphics.drawable.Drawable;
 import android.net.Uri;

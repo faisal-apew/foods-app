@@ -1,4 +1,4 @@
-package com.bsoandroid.foodapp;
+package com.example.foodsapp;
 
 import android.content.Intent;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package com.bsoandroid.foodapp;
+package com.example.foodsapp;
 
 import org.junit.Test;
 
