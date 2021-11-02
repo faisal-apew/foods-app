@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login() {
-        //Ambil nilai inputan
+
         TextView usernameTV = findViewById(R.id.username_text);
         TextView passwordTV = findViewById(R.id.password_text);
 
@@ -37,17 +37,16 @@ public class MainActivity extends AppCompatActivity {
         Log.d("print", "Username = " + username + " dan Password = " + password);
         Log.d("print", String.valueOf(username.equals("test")));
         Log.d("print", String.valueOf(password.equals("123456")));
-        //Cek apakah username dan password benar
+
         if (username.equals("test") && password.equals("123456")) {
             Log.d("success", "Sukses Login");
-            //Jika iya pindah activity
-            //Menggunakan Explicit Intent
+
             Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intent);
             this.finish();
         }  else {
             Log.d("failed", "Gagal login");
-            //Jika tidak tampilkan pesan error
+
             Toast toast = Toast.makeText(getApplicationContext(), "Username/Password salah", Toast.LENGTH_SHORT);
             toast.show();
         }
